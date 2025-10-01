@@ -28,7 +28,7 @@
   <div class="container">
     <section id="PhysicalTherapy">
       <div class="title">
-      <h2>Physical Therapy (PT)</h2>
+      <h2><button id="physicalTherapyBtn">Physical Therapy (PT)</button></h2>
       <img src="https://ih1.redbubble.net/image.352460554.1544/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" alt="Physical Therapy Logo">
     </div>
       <p>Physical therapy in an acute care setting focuses on helping patients 
@@ -55,5 +55,13 @@
         improve their ability to speak, understand language, and swallow safely.</p>
     </section>
   </div>
+
+  <script>
+       document.getElementById('physicalTherapyBtn').addEventListener('click', function() {
+       window.location.href = "physicalTherapist.html"
+       });
+
+
+  </script>
 </body>
 </html>
