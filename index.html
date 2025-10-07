@@ -29,9 +29,8 @@
     <section id="PhysicalTherapy">
       <div class="title">
       <h2><button id="physicalTherapyBtn">Physical Therapy (PT)</button></h2>
-      <img src="https://ih1.redbubble.net/image.352460554.1544/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" alt="Physical Therapy Logo">
     </div>
-      <p>Physical therapy in an acute care setting focuses on helping patients 
+        <p>Physical therapy in an acute care setting focuses on helping patients 
         regain movement and manage pain after surgery, injury, or illness. 
         Therapists work closely with patients to develop personalized treatment 
         plans that promote recovery and improve quality of life.</p>
@@ -39,9 +38,9 @@
 
     <section id="OccupationalTherapy">
       <div class="title">
-      <h2>Occupational Therapy (OT)</h2>
+      <h2><button id="occupationalTherapyBtn">Occupational Therapy (OT)</button></h2>
       </div>
-      <p>Occupational therapy helps patients develop or recover the skills 
+        <p>Occupational therapy helps patients develop or recover the skills 
         needed for daily living and working. In an acute hospital setting, 
         this may involve adapting tasks or environments to support patient independence and safety.</p>
     </section>
@@ -60,7 +59,9 @@
        document.getElementById('physicalTherapyBtn').addEventListener('click', function() {
        window.location.href = "physicalTherapist.html"
        });
-
+       document.getElementById('occupationalTherapyBtn').addEventListener('click', function() {
+        window.location.href = "occupationalTherapist.html"
+       });
 
   </script>
 </body>
