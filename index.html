@@ -13,7 +13,7 @@
   <ul>
     <li><a href="#PhysicalTherapy">Physical Therapy</a></li>
     <li><a href="#OccupationalTherapy">Occupational Therapy</a></li>
-    <li><a href="#SpeechAndLanguageTherapy">Speech and Language Pathology</a></li>
+    <li><a href="#SpeechAndLanguagePathology">Speech and Language Pathology</a></li>
     
   </ul>
 
@@ -45,9 +45,9 @@
         this may involve adapting tasks or environments to support patient independence and safety.</p>
     </section>
     
-    <section id="SpeechAndLanguageTherapy">
+    <section id="SpeechAndLanguagePathology">
       <div class="title">
-      <h2>Speech and Language Pathology (SLP)</h2>
+      <h2><button id ="speechAndLanguagePathologyBtn">Speech and Language Pathology (SLP)</button></h2>
       </div>
       <p>Speech and language therapy addresses communication and 
         swallowing disorders. Therapists assess and treat patients to 
@@ -62,7 +62,9 @@
        document.getElementById('occupationalTherapyBtn').addEventListener('click', function() {
         window.location.href = "occupationalTherapist.html"
        });
-
+       document.getElementById('speechAndLanguagePathologyBtn').addEventListener('click', function() {
+        window.location.href = "speechPathologist.html"
+       });
   </script>
 </body>
 </html>

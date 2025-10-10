@@ -44,14 +44,25 @@ a {
     text-decoration: none;
 }
 
+.therapySetting {
+    float: left;
+}
 
-
+.therapyTitle {
+    float: left;
+}
 
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-top: 75px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: translate(-100px, 0px)
 }
 
 section {
@@ -63,11 +74,20 @@ section {
     transition: background 0.3s ease;
 }
 
-.title img {
-    width: 70px;
-    height: 70px;
+img {
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     border-radius: 40%;
+    float: left;
+    transform: translate(-100px, 0px);
+}
+
+.ptDesc {
+    float: left;
+    transform: translate(0px, 50px);
+    width: 80vw;
+    display: flex;
 }
 
 .title {
@@ -77,6 +97,14 @@ section {
     gap: 0.5rem;
     width: 100%;
     justify-content: center;
+}
+
+#returnBtn {
+    float: right;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    margin: 20px;
 }
 
 section h2 {
