@@ -33,10 +33,9 @@ ul {
 
 p {
     color: rgb(59, 59, 59);
-    max-width: 600px;
     margin: 0.3rem auto;
     transition: color 0.3s ease; /* Change to your desired color */
-
+    max-width: 80ch;
 }
 
 a {
@@ -65,7 +64,6 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -107,6 +105,13 @@ img {
 .therapySubtitle {
         font-size: 1.3rem;
         display: block;
+}
+
+.fullDesc {
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
 #returnBtn {
