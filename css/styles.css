@@ -19,7 +19,7 @@ body {
 
 h1 {
     color: rgb(59, 59, 59);
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -44,14 +44,6 @@ a {
     text-decoration: none;
 }
 
-.therapySetting {
-    float: left;
-}
-
-.therapyTitle {
-    float: left;
-}
-
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,10 +51,23 @@ a {
     padding-top: 75px;
 }
 
+.homeDesc {
+    margin-top: 20px;
+    border-top: 3px dashed #999;
+    padding-top: 15px;
+}
+
+.briefDesc {
+    margin-top: 15px;
+}
+
 .container2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    transform: translate(-100px, 0px)
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 section {
@@ -79,24 +84,29 @@ img {
     height: 90px;
     object-fit: contain;
     border-radius: 40%;
-    float: left;
-    transform: translate(-100px, 0px);
+
 }
 
-.ptDesc {
-    float: left;
-    transform: translate(0px, 50px);
-    width: 80vw;
-    display: flex;
-}
 
 .title {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     width: 100%;
     justify-content: center;
+}
+
+.therapyTitle {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    display: block;
+    margin: 0;
+}
+
+.therapySubtitle {
+        font-size: 1.3rem;
+        display: block;
 }
 
 #returnBtn {
@@ -126,19 +136,29 @@ section:hover p {
 }
 
 button:hover {
-   background-color: rgb(71, 71, 104);
+   background-color: rgb(67, 67, 102);
     color: rgb(231, 231, 231);
     cursor: pointer;
 }
 
 button {
-    background-color: rgb(115, 116, 134, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(134, 135, 150, 0.5);
     color: black;
     border: 3px solid rgb(175, 175, 175);
-    width: 220px;
-    height: 50px;
     border-radius: 15%;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    font-size: 1.03rem;
-    
+    font-size: 1.2rem;
+    font-size-adjust: inherit;
+    padding: 0.5rem 1.2em; 
+    background-size: cover;
+    min-width: 120px;
+}
+
+@media (max-width: 768px) {
+    .container, .container2 {
+        grid-template-columns: 1fr;
+    }
 }
